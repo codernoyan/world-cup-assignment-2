@@ -160,6 +160,47 @@ header {
 
 /* players blogs end */
 
+/* Match cards start */
+.match-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.match-card {
+    width: 312px;
+    height: 242px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.match-flags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.match-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.match-details h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #161616;
+    margin-bottom: 10px;
+}
+
+.match-details p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+/* Match cards end */
+
 /* footer start */
 footer {
     height: 440px;

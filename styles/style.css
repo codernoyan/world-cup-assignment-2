@@ -14,68 +14,66 @@ body {
 }
 
 .container {
-    max-width: 1300px;
-    margin: 50px auto;
+    width: 1320px;
 }
 
-/* header section style start */
+/* header style start */
 header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 130px;
+}
+
+.top-banner {
+    height: 640px;
+    border-radius: 30px;
     display: flex;
     justify-content: space-around;
     background-color: #161616;
-    color: #ffffff;
-    height: 646px;
-    padding-left: 106px;
-    padding-right: 80px;
-    border-radius: 30px;
+    padding-left: 100px;
 }
 
-.header-half {
+.half-width {
     width: 50%;
 }
 
-.header-half img {
-    width: 100%;
+.half-width img {
+    width: 80%;
 }
 
-#person-text>* {
-    margin-bottom: 30px;
+.top-banner .banner-text {
+    color: #fff;
+    align-self: center;
 }
 
-#person-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 50px;
-    align-items: flex-start;
+.banner-text>* {
+    margin-bottom: 20px;
 }
 
-#person-text h1 {
+
+.banner-heading h1 {
     font-size: 70px;
     line-height: 80px;
 }
 
-#person-text p {
-    font-weight: 400;
+.banner-description p {
     font-size: 16px;
     line-height: 26px;
 }
 
-#person-image {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.banner-btn .link-btn {
+    background-color: #5FD068;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 25px;
+    border-radius: 5px;
 }
 
-.link-button {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #3CCF4E;
-    padding: 16px 35px;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 20px;
-    font-weight: 400;
+.top-banner .banner-image {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
 }
 
 /* header section style end */
@@ -161,11 +159,12 @@ header {
 /* players blogs end */
 
 /* Match cards start */
-.match-cards{
+.match-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .match-card {
     width: 312px;
     height: 242px;
@@ -266,3 +265,49 @@ nav {
 }
 
 /* footer end */
+
+/* Media Queries */
+@media only screen and (max-width: 576px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .top-banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 28px 28px 0 28px;
+    }
+
+    .banner-text {
+        text-align: center;
+        padding: 10px 10px 0 10px;
+    }
+
+    .banner-heading h1 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .banner-description p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+    .banner-image {
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+    }
+}

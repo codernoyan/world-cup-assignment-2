@@ -468,7 +468,7 @@ nav {
         border-radius: 10px;
         padding: 60px 30px 0 60px;
         margin: 0 20px;
-        height: 520px;
+        height: 550px;
     }
 
     .banner-text {
@@ -482,7 +482,7 @@ nav {
     }
 
     .banner-description p {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 18px;
     }
 

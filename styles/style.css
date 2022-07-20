@@ -268,9 +268,12 @@ nav {
 
 /* Media Queries */
 @media only screen and (max-width: 576px) {
+    header{
+        margin-bottom: 24px;
+    }
 
     .container {
-        width: 90%;
+        width: 100%;
     }
 
     .top-banner {
@@ -279,6 +282,7 @@ nav {
         justify-content: space-between;
         border-radius: 10px;
         padding: 28px 28px 0 28px;
+        margin: 0 20px;
     }
 
     .banner-text {
@@ -309,5 +313,32 @@ nav {
         display: flex;
         justify-content: flex-end;
         align-self: flex-end;
+    }
+
+    /* players blogs */
+    .players-blogs{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .player-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 335px;
+    }
+
+    .toggle-buttons {
+       background: none;
+    }
+    
+    .toggle-button {
+        border: 1px solid #E8E8E8;
+    }
+    
+    footer{
+        margin-top: 24px;
     }
 }

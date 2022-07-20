@@ -156,6 +156,12 @@ header {
     color: #161616;
 }
 
+.card-info {
+    display: flex;
+    gap: 12px;
+}
+
+
 /* players blogs end */
 
 /* Match cards start */
@@ -340,5 +346,16 @@ nav {
     
     footer{
         margin-top: 24px;
+    }
+
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    #social-icon{
+        display: flex;
+        flex-direction: row;
     }
 }

@@ -14,15 +14,27 @@
 
 <body>
     <!-- header section start -->
-    <header class="container">
-        <section id="person-text" class="header-half">
-            <h1>The Greatest show on the earth</h1>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old.</p>
-            <a href="#" class="link-button">Watch Live &gt;</a>
-        </section>
-        <section id="person-image" class="header-half">
-            <img src="./assets/Banner Image.png" alt="player-image">
+    <header>
+        <section class="container">
+            <div class="top-banner">
+                <div class="banner-text half-width">
+                    <div class="banner-heading">
+                        <h1>The Greatest show on the earth</h1>
+                    </div>
+                    <div class="banner-description">
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply
+                            random text. It has roots in a piece of classical Latin literature from 45 BC, making it
+                            over
+                            2000 years old.</p>
+                    </div>
+                    <div class="banner-btn">
+                        <a href="#" class="link-btn">Watch Live</a>
+                    </div>
+                </div>
+                <div class="banner-image half-width">
+                    <img src="./assets/Banner Image.png" alt="marcelo">
+                </div>
+            </div>
         </section>
     </header>
     <!-- header section end -->
@@ -30,7 +42,7 @@
     <main class="container">
         <section class="players-blogs">
             <div class="toggle-buttons">
-                <a href="#" class="toggle-button">Upcoming Match</a>
+                <a href="match.html" class="toggle-button">Upcoming Match</a>
                 <a href="#" class="toggle-button">All Group</a>
                 <a id="colored-button" href="#" class="toggle-button">Blog</a>
             </div>
@@ -126,7 +138,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
     </main>
     <!-- players card section start -->
@@ -145,10 +156,10 @@
                 <li><a href="#">Goal App</a></li>
                 <li><a href="#">Goal Live</a></li>
             </ul>
-            <ul class="navigation">
-                <li><a class="icon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a class="icon" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <ul id="social-icon" class="navigation">
+                <li><a class="icon" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a class="icon" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="icon" href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
     </footer>

@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 1320px;
+    max-width: 1320px;
 }
 
 /* header style start */
@@ -99,7 +99,6 @@ header {
 }
 
 .toggle-button {
-    /* display: block; */
     color: #161616;
     background-color: #ffffff;
     text-align: center;
@@ -161,7 +160,6 @@ header {
     gap: 12px;
 }
 
-
 /* players blogs end */
 
 /* Match cards start */
@@ -206,6 +204,22 @@ header {
 
 /* Match cards end */
 
+/* view button */
+#view-btn{
+    display: none;
+}
+
+#view-btn a {
+    background: #3CCF4E;
+    display: block;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: inherit;
+}
+
 /* footer start */
 footer {
     height: 440px;
@@ -240,6 +254,7 @@ nav {
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -274,7 +289,7 @@ nav {
 
 /* Media Queries */
 @media only screen and (max-width: 576px) {
-    header{
+    header {
         margin-bottom: 24px;
     }
 
@@ -322,13 +337,14 @@ nav {
     }
 
     /* players blogs */
-    .players-blogs{
+    .players-blogs {
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
 
-    .player-cards, .match-cards {
+    .player-cards,
+    .match-cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -337,25 +353,150 @@ nav {
     }
 
     .toggle-buttons {
-       background: none;
+        background: none;
     }
-    
+
     .toggle-button {
         border: 1px solid #E8E8E8;
     }
-    
-    footer{
+
+    footer {
         margin-top: 24px;
+        gap: 20px;
     }
 
-    .navigation{
+    .navigation {
         flex-direction: column;
         align-items: center;
-        gap: 12px;
+        gap: 20px;
     }
 
-    #social-icon{
+    #social-icon {
         display: flex;
         flex-direction: row;
     }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    header {
+        margin-bottom: 70px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 60px 30px 0 60px;
+        margin: 0 20px;
+        height: 400px;
+    }
+
+    .banner-text {
+        text-align: start;
+        padding: 15px 15px 0 15px;
+    }
+
+    .banner-heading h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .banner-description p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+    .banner-btn .link-btn {
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    .players-blogs {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .toggle-buttons {
+        width: 100%;
+        height: auto;
+        background: none;
+        flex-direction: row;
+    }
+
+    .toggle-button {
+        border: 1px solid #E8E8E8;
+    }
+
+    .player-cards,
+    .match-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        margin-top: 70px;
+    }
+
+    #view-btn{
+        display: block;
+    }
+}
+
+/* Large Devices */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .top-banner {
+        align-items: flex-start;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 60px 30px 0 60px;
+        margin: 0 20px;
+        height: 520px;
+    }
+
+    .banner-text {
+        text-align: start;
+        padding: 15px 15px 0 15px;
+    }
+
+    .banner-heading h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .banner-description p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .half-width {
+        width: 100%;
+    }
+
+    .half-width img {
+        width: 100%;
+    }
+
+
+    .player-cards,
+    .match-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
